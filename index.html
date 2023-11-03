@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foodie</title>
+	<link href="public/css/output.css" rel="stylesheet">
+	<link rel="shortcut icon" href=" public/img/logo.svg" type="image/x-icon">
+</head>
+
+<body class="bg-color2 min-h-screen">
+
+	<!-- Hero -->
+	<section class="min-h-screen relative">
+		<header class="container mx-auto py-8">
+			<nav class="relative flex mx-auto justify-end md:justify-around items-center py-5 px-3">
+				<!-- Divider -->
+				<div class="divider hidden md:block">
+				</div>
+				<div class="hidden md:flex items-center space-x-2">
+					<img src="public/img/logo.svg" alt="Foodie Logo">
+					<h2 class="font-potta text-color1 text-xl lg:text-1xl">Foodie</h2>
+				</div>
+
+
+				<ul class="hidden md:flex space-x-8 md:space-x-10 lg:space-x-20">
+					<li>
+						<a href="/index.html"
+							class="active font-poppins font-normal hover:text-color1 transition-colors text-sm md:text-base">Home</a>
+					</li>
+					<li>
+						<a href="#foodie-menu"
+							class="font-poppins font-normal hover:text-color1 transition-colors text-sm md:text-base">Menu</a>
+					</li>
+					<li>
+						<a href="#popular"
+							class="font-poppins font-normal hover:text-color1 transition-colors text-sm md:text-base">Popular</a>
+					</li>
+					<li>
+						<a href="#newsletter"
+							class="font-poppins font-normal hover:text-color1 transition-colors text-sm md:text-base">Newsletter</a>
+					</li>
+				</ul>
+
+				<div class="items-center hidden md:flex">
+					<img src="public/img/ShoppingCart.svg" alt="Cart Icon"
+						class=" cursor-pointer hover:scale-125 transition-transform">
+					<img src="public/img/Search.svg" alt="Search Icon"
+						class="ml-4 cursor-pointer hover:scale-125 transition-transform">
+				</div>
+			</nav>
+		</header>
+		<!-- Mobile Menu -->
+		<div class="absolute md:hidden p-8 bg-color7 min-h-min left-0 top-0 right-0">
+			<!-- Hamburger Icon -->
+			<div class="flex justify-between items-center  z-50">
+				<div class="flex space-x-2 items-center">
+					<img src="public/img/logo.svg" alt="Foodie Logo">
+					<h2 class="font-potta text-color1 text-xl lg:text-1xl">Foodie</h2>
+				</div>
+
+				<button id="menu-btn" class="block hamburger md:hidden focus:outline-none z-50" title="Hamburger btn">
+					<span class="top"></span>
+					<span class="mid"></span>
+					<span class="bot"></span>
+				</button>
+			</div>
+
+			<div id="menu" class="hidden">
+				<div class="flex flex-col space-y-8 min-h-min w-full">
+					<a href="/index.html" class="active z-50  text-sm first:mt-8">Home</a>
+					<a href="#foodie-menu" class="z-50 text-sm ">Menu</a>
+					<a href="#popular" class="z-50 text-sm ">Popular</a>
+					<a href="#newsletter" class="z-50 text-sm ">Newsletter</a>
+				</div>
+			</div>
+		</div>
+		<!-- Main content -->
+		<main class="container mx-auto mt-8 space-x-4 space-y-6 md:flex md:flex-row md:justify-around">
+			<div class="p-4">
+				<h1 class="text-1xl lg:text-2xl font-poppins font-bold tracking-wide">
+					Satisfy Your
+					<span class="font-poppins font-bold text-color1">
+						Cravings<br>
+					</span> with Foodie
+				</h1>
+				<p class="font-poppins font-light max-w-sm my-8 text-sm lg:text-base">
+					At Foodie, we understand that cravings for delightful flavors are more than just a passing whim;
+					they are a journey of satisfaction waiting to unfold.
+				</p>
+
+
+				<a href="#"
+					class="bg-color1 text-color4 text-sm lg:text-base font-poppins font-regular py-3 px-8 rounded shadow-lg shadow-color1 cursor-pointer hover:bg-opacity-90">
+					Order Now
+					<img src="public/img/RightArrow.svg" alt="Arrow" class="inline-block ml-2">
+				</a>
+			</div>
+
+			<div>
+				<img src="public/img/pizza.png" alt="Pizza"
+					class="hidden md:block md:w-60 md:h-auto lg:w-auto lg:h-auto">
+			</div>
+
+			<img src="public/img/leaves.svg" alt="Leaves"
+				class="absolute bottom-18 md:bottom-14 right-36  md:left-1/2 w-16 md:h-auto lg:w-auto lg:h-auto">
+		</main>
+	</section>
+
+	<!--  Menu section -->
+	<section id="foodie-menu" class="container mx-auto px-4 py-8">
+		<div
+			class="flex-row lg:flex items-baseline justify-between lg:divide-x divide-color7 min-h-full max-w-6xl mx-auto px-8 py-16  bg-color5 rounded-3xl drop-shadow-2xl shadow-color3">
+			<!-- Meal 1 -->
+			<div class="flex justify-center flex-1 flex-col items-center text-center">
+				<div>
+					<img src="public/img/sushi.svg" alt="Sushi">
+				</div>
+
+				<div>
+					<h3 class="font-poppins font-bold my-5 text-base md:text-lg">Tasty Sushi</h3>
+					<p class="font-poppins font-light mb-8 text-sm md:text-base">There are manu variations of<br>
+						passage of availabbc. but thc<br>
+						maiority have suffer</p>
+					<a href="#"
+						class="border-2 border-color1 py-2 px-6 rounded font-poppins font-medium text-sm md:text-base hover:bg-color1 hover:text-color4 transition-all">See
+						menu</a>
+				</div>
+			</div>
+			<!-- Meal 2 -->
+			<div class="flex justify-center flex-1 flex-col items-center text-center my-8 border-color7">
+				<div>
+					<img src="public/img/frenchfries.svg" alt="Sushi">
+				</div>
+
+				<div>
+					<h3 class="font-poppins font-bold my-5 text-base md:text-lg">French Fries</h3>
+					<p class="font-poppins font-light mb-8 text-sm md:text-base">There are manu variations of<br>
+						passage of availabbc. but thc<br>
+						maiority have suffer</p>
+					<a href="#"
+						class="border-2 border-color1 py-2 px-6 rounded font-poppins font-medium text-sm md:text-base hover:bg-color1 hover:text-color4 transition-all">See
+						menu</a>
+				</div>
+			</div>
+			<!-- Meal 3 -->
+			<div class="flex justify-center flex-1 flex-col items-center text-center">
+				<div>
+					<img src="public/img/barbecue.png" alt="Sushi">
+				</div>
+				<div>
+					<h3 class="font-poppins font-bold my-5 text-base md:text-lg">Hot Barbecue</h3>
+					<p class="font-poppins font-light mb-8 text-sm md:text-base">There are manu variations of<br>
+						passage of availabbc. but thc<br>
+						maiority have suffer</p>
+					<a href="#"
+						class="border-2 border-color1 py-2 px-6 rounded font-poppins font-medium text-sm md:text-base hover:bg-color1 hover:text-color4 transition-all">See
+						menu</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why choose us section -->
+	<section class="relative container mx-auto py-14 mt-8 max-w-6xl px-4">
+		<!-- leaves -->
+		<img src="public/img/leaves.svg" alt="Leaves"
+			class="absolute -top-6 left-1/3 w-16 md:h-auto lg:w-auto lg:h-auto ">
+		<div class="flex lg:justify-between items-center max-w-xl md:max-w-2xl mx-auto lg:max-w-none">
+			<div class="">
+				<img src="public/img/mealcombo.png" alt="Meal Combo"
+					class="hidden lg:block w-72 h-auto lg:w-auto lg:h-auto">
+			</div>
+
+			<div>
+				<h3 class="font-poppins font-bold lg:text-1xl text-xl">Why People Choose Us?</h3>
+
+				<div class="mt-12">
+					<div class="flex">
+						<div class="drop-shadow-2xl shadow-color3">
+							<img src="public/img/Hamburger.svg" alt="Hamburger" class="bg-color4 p-1 rounded-full">
+						</div>
+						<div class="ml-6">
+							<h4 class="font-poppins font-medium text-lg lg:text-xl">Choose Your Favorite</h4>
+							<p class="font-poppins font-light mt-3 lg:text-base text-sm">There are manu variations of
+								passage of availabbc.<br> but the maiority have suffer.</p>
+						</div>
+					</div>
+					<div class="flex my-8">
+						<div class="drop-shadow-2xl shadow-color3">
+							<img src="public/img/delivery.svg" alt="Hamburger" class="bg-color4 p-1 rounded-full">
+						</div>
+						<div class="ml-6">
+							<h4 class="font-poppins font-medium text-lg lg:text-xl">We Deliver your Meals</h4>
+							<p class="font-poppins font-light mt-3 lg:text-base text-sm">There are manu variations of
+								passage of availabbc.<br> but the maiority have suffer.</p>
+						</div>
+					</div>
+					<div class="flex">
+						<div class="drop-shadow-2xl shadow-color3">
+							<img src="public/img/combo-set.svg" alt="Hamburger" class="bg-color4 p-1 rounded-full">
+						</div>
+						<div class="ml-6">
+							<h4 class="font-poppins font-medium text-lg lg:text-xl">Grab Your Delicious Food</h4>
+							<p class="font-poppins font-light mt-3 lg:text-base text-sm">There are manu variations of
+								passage of availabbc.<br> but the maiority have suffer.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Popular meal section -->
+	<section id="popular" class="container relative mx-auto px-4 py-14">
+
+		<!-- rectangle -->
+		<div class="">
+			<img class="max-w-full mx-auto absolute right-0 left-0 bottom-0 hidden lg:block"
+				src="public/img/Rectangle 12.png" alt="Rectangle">
+		</div>
+
+		<div class="max-w-md mx-auto text-center">
+			<h3 class="font-poppins font-bold lg:text-1xl text-xl">Our Popular Food Items</h3>
+			<p class="font-poppins font-light lg:text-base text-sm mt-6">There are manu variations of
+				passage of availabbc.<br> but the
+				maiority have suffer availabbc. but the
+				maiority have suffer</p>
+		</div>
+
+		<div class="flex-row lg:flex justify-center space-y-8 gap-x-20 items-baseline mt-16">
+
+			<!-- Meal 1 -->
+			<div class="flex-row md:flex-col relative text-center min-h-min p-3 lg:p-6 bg-color5 rounded-2xl">
+				<div class="absolute top-3 right-3 rounded-full bg-color4 py-1 px-2">
+					<div class="flex items-center">
+						<img src="public/img/Star.svg" alt="Rating" class="mr-1">
+						<p class="font-poppins font-bold text-xs lg:text-sm">4.8 <span
+								class="text-color8 font-poppins font-regular mx-1 text-xs lg:text-sm">(3.1k)</span></p>
+					</div>
+				</div>
+
+				<div class="w-1/5 lg:w-1/2 mx-auto mt-8">
+					<img src="public/img/meal1.svg" alt="Chicken Sandwich">
+				</div>
+
+				<div class="mt-4">
+					<h4 class="font-poppins font-bold text-base md:text-lg">Chicken Sandwich</h4>
+					<p class="font-poppins font-light mt-3 text-sm md:text-base">There are manu variations of<br>
+						passage of availabbc. but thc <br>
+						maiority have suffer</p>
+				</div>
+			</div>
+			<!-- Meal 2 -->
+			<div class="flex-row md:flex-col relative text-center min-h-min p-3 lg:p-6 bg-color5 rounded-2xl">
+				<div class="absolute top-3 right-3 rounded-full bg-color4 py-1 px-2">
+					<div class="flex items-center">
+						<img src="public/img/Star.svg" alt="Rating" class="mr-1">
+						<p class="font-poppins font-bold text-xs lg:text-sm">4.2 <span
+								class="text-color8 font-poppins font-regular mx-1 text-xs lg:text-sm">(3.7k)</span></p>
+					</div>
+				</div>
+
+				<div class="w-1/5 lg:w-1/2 mx-auto mt-8">
+					<img src="public/img/meal2.svg" alt="Chicken Sandwich">
+				</div>
+
+				<div class="mt-4">
+					<h4 class="font-poppins font-bold text-base md:text-lg">Chicken Masala</h4>
+					<p class="font-poppins font-light mt-3 text-sm md:text-base">There are manu variations of<br>
+						passage of availabbc. but thc <br>
+						maiority have suffer</p>
+				</div>
+			</div>
+			<!-- Meal 3 -->
+			<div class="flex-row md:flex-col relative text-center min-h-min p-3 lg:p-6 bg-color5 rounded-2xl">
+				<div class="absolute top-3 right-3 rounded-full bg-color4 py-1 px-2">
+					<div class="flex items-center">
+						<img src="public/img/Star.svg" alt="Rating" class="mr-1">
+						<p class="font-poppins font-bold text-xs lg:text-sm">4.7 <span
+								class="text-color8 font-poppins font-regular mx-1 text-xs lg:text-sm">(1.1k)</span></p>
+					</div>
+				</div>
+
+				<div class="w-1/5 lg:w-1/2 mx-auto mt-8">
+					<img src="public/img/meal3.svg" alt="Chicken Sandwich">
+				</div>
+
+				<div class="mt-4">
+					<h4 class="font-poppins font-bold text-base md:text-lg">Salad Masala</h4>
+					<p class="font-poppins font-light mt-3 text-sm md:text-base">There are manu variations of<br>
+						passage of availabbc. but thc <br>
+						maiority have suffer</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- Feedback section -->
+	<section class="container relative mx-auto px-4 py-14 mt-16">
+
+		<div class="flex justify-between xl:justify-around items-center max-w-xl md:max-w-2xl mx-auto lg:max-w-none">
+			<div class="w-full md:w-auto">
+				<div>
+					<h3 class="font-poppins font-bold text-xl lg:text-1xl">Customer <span
+							class="text-color1 font-poppins font-bold text-xl lg:text-1xl">Feedback</span>
+					</h3>
+					<p class="max-w-md mt-6 text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur. Ut iaculis
+						volutpat feugiat euismod
+						purus est. Proin eu
+						quis
+						orci eget aliquet ipsum pellentesque vulputate. Felis nisl senectus ut ac gravida magna.
+						Eleifend
+						ornare imperdiet faucibus molestie.</p>
+				</div>
+
+				<div class="flex items-center w-full mt-8">
+					<div class="mr-4">
+						<img src="public/img/jb.svg" alt="JB">
+					</div>
+
+					<div class="flex flex-col">
+						<h4 class="font-poppins font-light text-base lg:text-lg">JB Dela Cruz</h4>
+						<h5 class="text-color1 font-poppins font-bold text-xs">Web Developer</h5>
+					</div>
+				</div>
+
+				<div class="bg-color6 rounded-se-full py-5 px-6 mt-8">
+					<div class="sm:flex space-y-3 sm:space-y-0 justify-around md:justify-between">
+						<div class="flex items-center">
+							<div>
+								<img src="public/img/Chef.svg" alt="Chef">
+							</div>
+							<h5 class="font-poppins font-bold text-sm lg:text-base text-color1 mx-4">68</h5>
+							<h5 class="font-poppins font-light text-sm">Chef <br>Professional</h5>
+						</div>
+
+						<div class="flex items-center">
+							<div>
+								<img src="public/img/Trophy.svg" alt="Trophy">
+							</div>
+							<h5 class="font-poppins font-bold text-sm lg:text-base text-color1 mx-4">968+</h5>
+							<h5 class="font-poppins font-light text-sm">Customer <br>Satisfaction</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="public/img/chef.png" alt="Chef" class="hidden lg:block w-72 h-auto xl:w-auto xl:h-auto">
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- Newsletter section -->
+	<section id="newsletter" class="relative container mx-auto px-4 py-14">
+		<!-- Divider -->
+		<div class="divider">
+		</div>
+		<div class="bg-color6 max-w-6xl mx-auto py-14 px-6 min-h-min rounded-xl ">
+			<div class="text-center">
+				<div>
+					<h3 class="font-poppins font-bold text-xl lg:text-1xl">Subscribe <span
+							class="text-color1 font-poppins font-bold text-xl lg:text-1xl">Newsletter</span></h3>
+					<p class="text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur. Ut iaculis volutpat
+						feugiat<br> euismod purus est.</p>
+				</div>
+
+				<div class="relative mt-8 max-w-lg mx-auto rounded-2xl">
+					<input type="text" title="Newsletter"
+						class="outline-none focus-visible:outline-offset-2 focus-visible:outline-color2 py-2 px-4 lg:py-3 lg:px-8 rounded-2xl w-full"
+						placeholder="Enter your Email">
+					<button type="submit" title="Subscribe" aria-label="Subscribe"
+						class="absolute right-0 top-0 bottom-0 py-2 px-4 lg:py-3 lg:px-8 rounded-r-2xl bg-color1 text-color4 font-poppins font-bold text-lg lg:text-xl hover:opacity-90 ">Subscribe</button>
+				</div>
+
+				<p class="font-poppins font-light text-sm lg:text-base mt-3">Lorem ipsum dolor sit amet consectetur.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOoter -->
+	<section class="container mx-auto px-4 py-14">
+
+
+		<div class="md:flex max-w-6xl mx-auto w-full">
+			<div class="w-1/2">
+				<div class="mb-4">
+					<div class="flex">
+						<img src="public/img/logo.svg" alt="Foodie Logo">
+						<h2 class="text-xl lg:text-1xl font-potta text-color1 ml-2">Foodie</h2>
+					</div>
+					<p class="font-poppins font-light text-sm lg:text-base mt-2">Lorem Ipsum</p>
+				</div>
+
+				<div>
+					<h4 class="font-poppins font-bold text-lg lg:text-xl">Make a <span
+							class="font-poppins font-bold text-color1 text-lg lg:text-xl">call</span></h4>
+					<p class="font-poppins font-light text-base lg:text-lg mt-2">+(63)09476373794</p>
+				</div>
+			</div>
+
+			<div class="mt-6 md:mt-0">
+				<h3 class="font-poppins font-bold text-lg lg:text-xl">Opening Hours</h3>
+				<div class="mt-3">
+					<p class="font-poppins font-light text-sm lg:text-base"><span class="font-bold">Monday to
+							Fri:</span> 9:00 AM - 7:00 PM
+					</p>
+					<p class="font-poppins font-light text-sm lg:text-base"><span class="font-bold">Saturday:</span>
+						1:00 PM - 7:00 PM</p>
+				</div>
+
+				<p class="font-poppins font-bold text-color1 text-sm lg:text-base mt-3">Sunday: Closed</p>
+			</div>
+		</div>
+	</section>
+
+	<script src="public/js/nav.js"></script>
+</body>
+
+</html>
